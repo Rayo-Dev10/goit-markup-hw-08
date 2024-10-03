@@ -1,0 +1,51 @@
+@import "./variables.scss";
+
+// Mixins
+@mixin features-title {
+  color: $main-text-color;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  margin: 30px 0 10px;
+  text-transform: uppercase;
+}
+
+@mixin features-text {
+  color: $paragraf-text-color;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  text-align: left;
+}
+
+// Componentes
+.features__icon--section {
+  background-color: $background-team-section;
+  border-radius: 4px;
+  padding: 25px 100px;
+
+  .features__icon {
+    width: 70px;  
+    height: 70px; 
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.features__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.features__title {
+  @include features-title;
+}
+
+.features__text {
+  @include features-text;
+}

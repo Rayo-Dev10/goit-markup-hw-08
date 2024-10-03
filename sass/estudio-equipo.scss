@@ -1,0 +1,97 @@
+@import "./variables.scss";
+
+// Mixin para títulos
+@mixin title-style($font-size, $font-weight, $color, $line-height, $margin-bottom) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+}
+
+// Mixin para listas
+@mixin list-style($display, $justify-content, $gap, $flex-wrap: nowrap) {
+  display: $display;
+  justify-content: $justify-content;
+  gap: $gap;
+  flex-wrap: $flex-wrap;
+}
+
+// Mixin para tarjetas
+@mixin card-style($background-color, $border-radius, $box-shadow) {
+  background-color: $background-color;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+// Mixin para texto (miembros, roles)
+@mixin text-style($font-weight, $font-size, $letter-spacing, $color: null, $line-height: null) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+  @if $color != null {
+    color: $color;
+  }
+  @if $line-height != null {
+    line-height: $line-height;
+  }
+}
+
+// Estilos con mixin aplicado
+.team {
+  background-color: $background-team-section;
+  
+  .team__title {
+    @include title-style($font-size-title, $font-weight-bold, $main-text-color, 1, $margin-bottom-title);
+    text-align: center;
+  }
+  
+  .team__list {
+    @include list-style(flex, space-between, $gap-list-items);
+  }
+
+  .team__card {
+    @include card-style($background-color, $card-border-radius, $box-shadow-light);
+  }
+
+  .team__info {
+    padding: $padding-info;
+    text-align: center;
+  }
+
+  .team__member {
+    @include text-style($font-weight-medium, $font-size-member, $letter-spacing-standard, null, 1.19);
+    margin-bottom: 10px;
+  }
+
+  .team__role {
+    @include text-style($font-weight-regular, $font-size-role, $letter-spacing-standard, $paragraf-text-color);
+  }
+
+  .team__rrss--list {
+    @include list-style(flex, center, 10px, wrap);
+    margin-top: 16px;
+  }
+
+  .team__rrss--icon {
+    fill: $icon-color;
+    display: block;
+    width: 20px;  
+    height: 20px; 
+  }
+
+  .team__rrss--list > li {
+    padding: 12px;
+    border-radius: 50%;
+    transition: color, background-color, transform $duration-time cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover, &:focus {
+      background-color: $active-color;
+      cursor: pointer;
+    }
+
+    &:hover .team__rrss--icon, &:focus .team__rrss--icon {
+      fill: $background-color;
+    }
+  }
+}

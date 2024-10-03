@@ -1,0 +1,136 @@
+@import "./variables.scss";
+
+/* Mixin para el contenedor del header */
+@mixin header-content {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+/* Mixin para el logo */
+@mixin logo-set {
+  font-family: Raleway;
+  font-weight: $font-weight-bold; // Peso de fuente para el logo
+  font-size: 26px;
+  color: $active-color;
+  transition: transform $duration-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Mixin para la sección de navegación */
+@mixin nav-section {
+  margin-left: 93px;
+  margin-top: auto;
+}
+
+/* Mixin para la lista de navegación */
+@mixin nav-list {
+  display: flex;
+  font-weight: $font-weight-medium; // Peso de fuente medio
+  align-content: space-between;
+  gap: 46px;
+}
+
+/* Mixin para la lista de navegación subrayada */
+@mixin nav-list-underline {
+  &::after {
+    content: "";
+    background-color: $active-color;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+  }
+}
+
+/* Mixin para los elementos de la lista de navegación y contacto */
+@mixin nav-item {
+  color: $main-text-color;
+}
+
+/* Mixin para el estado hover y focus */
+@mixin hover-focus {
+  color: $active-color;
+  transform: scale(1.1);
+}
+
+/* Mixin para la lista de contacto */
+@mixin contact-list {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+  align-items: center;
+  transition: color, transform $duration-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Mixin para el conjunto de contacto */
+@mixin contact-set {
+  font-weight: $font-weight-medium; // Peso de fuente medio
+}
+
+/* Mixin para el ícono de contacto */
+@mixin contact-icon {
+  margin-right: 10px;
+  fill: $paragraf-text-color;
+
+  &:hover,
+  &:focus {
+    fill: $active-color;
+  }
+}
+
+/* Aplicación de los mixins */
+.header__content {
+  @include header-content; // Aplica el mixin para el contenedor del header
+}
+
+.logo__set {
+  @include logo-set; // Aplica el mixin para el logo
+}
+
+.header__nav-section {
+  @include nav-section; // Aplica el mixin para la sección de navegación
+}
+
+.header__nav-list {
+  @include nav-list; // Aplica el mixin para la lista de navegación
+}
+
+.header__nav-list--underline {
+  @include nav-list-underline; // Aplica el mixin para subrayar la lista de navegación
+}
+
+.header__nav-list--item,
+.header__contact-set--item {
+  @include nav-item; // Aplica el mixin para elementos de navegación y contacto
+}
+
+.header__contact-set--item:hover,
+.logo__set:hover,
+.header__nav-list--item:hover,
+.header__contact-set--item:focus,
+.logo__set:focus,
+.header__nav-list--item:focus {
+  @include hover-focus; // Aplica el mixin para el estado hover y focus
+}
+
+.current-page {
+  color: $active-color;
+  display: block;
+  padding-bottom: 28px;
+}
+
+.header__contact-list {
+  @include contact-list; // Aplica el mixin para la lista de contacto
+}
+
+.header__contact-set {
+  @include contact-set; // Aplica el mixin para el conjunto de contacto
+}
+
+.header__contact-set--item {
+  color: $paragraf-text-color; // Color para el ítem de contacto
+}
+
+.contact-set--icon {
+  @include contact-icon; // Aplica el mixin para el ícono de contacto
+}
+

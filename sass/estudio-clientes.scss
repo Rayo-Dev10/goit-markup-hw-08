@@ -1,0 +1,49 @@
+@import "./variables.scss";
+
+// Mixins
+@mixin clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+  transition: color, transform cubic-bezier(0.4, 0, 0.2, 1) $duration-time;
+
+  &:hover,
+  &:focus {
+    border-color: $active-color;
+    transform: scale(1.05);
+
+    .clients__icon {
+      fill: $active-color;
+    }
+  }
+}
+
+// Componentes
+.clients {
+  text-align: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    @include clients-item;
+  }
+
+  &__icon {
+    fill: $icon-color;
+    margin: 16px 32px;
+    width: 106px;  
+    height: 60px;  
+    viewBox: 0 0 100 50;  
+  }
+}

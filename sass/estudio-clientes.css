@@ -1,0 +1,34 @@
+.clients {
+  text-align: center;
+}
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+}
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients__item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgb(175, 177, 184);
+  border-radius: 4px;
+  transition: color, transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.clients__item:hover, .clients__item:focus {
+  border-color: rgb(33, 150, 243);
+  transform: scale(1.05);
+}
+.clients__item:hover .clients__icon, .clients__item:focus .clients__icon {
+  fill: rgb(33, 150, 243);
+}
+.clients__icon {
+  fill: rgb(175, 177, 184);
+  margin: 16px 32px;
+  width: 106px;
+  height: 60px;
+  viewBox: 0 0 100 50;
+}/*# sourceMappingURL=estudio-clientes.css.map */

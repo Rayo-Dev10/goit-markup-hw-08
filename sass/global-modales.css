@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* Mixin para el backdrop */
+/* Mixin para el modal */
+/* Mixin para el formulario modal */
+/* Aplicación de los mixins */
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: visible;
+  width: 100%;
+  z-index: 100;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  display: block;
+  height: 581px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+}
+.modal .close-btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+}
+.modal .close-btn:hover {
+  fill: rgb(33, 150, 243);
+}
+.modal .close-btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal .close-btn:hover {
+  color: rgb(33, 150, 243);
+}
+
+.modal-form {
+  display: block;
+  padding: 40px;
+}
+.modal-form .modal-header {
+  text-align: center;
+  color: rgb(33, 33, 33);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+.modal-form .form-label {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+.modal-form .form-label .label-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgb(117, 117, 117);
+}
+.modal-form .form-label .modal-form-icon {
+  fill: rgb(33, 33, 33);
+  position: absolute;
+  display: block;
+  top: 55%;
+  left: 15px;
+}
+.modal-form .form-label:focus-within .modal-form-icon {
+  fill: rgb(33, 150, 243);
+}
+.modal-form .form-label:focus-within .form-input,
+.modal-form .form-label:focus-within .form-textarea {
+  border-color: rgb(33, 150, 243);
+  outline-color: rgb(33, 150, 243);
+}
+.modal-form .form-input {
+  width: 100%;
+  height: 40px;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(33, 33, 33, 0.2);
+  outline-color: rgba(33, 33, 33, 0.2);
+  margin-top: 4px;
+  padding: 12px 42px;
+}
+.modal-form .form-textarea {
+  width: 100%;
+  height: auto;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(33, 33, 33, 0.2);
+  outline-color: rgba(33, 33, 33, 0.2);
+  margin: 4px 0 20px 0;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  resize: none;
+}
+.modal-form .modal-link {
+  text-decoration: underline;
+  color: rgb(33, 150, 243);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form .modal-link:hover, .modal-form .modal-link:focus {
+  transform: scale(1.03);
+  font-weight: 500;
+}
+.modal-form .modal-checkbox {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  align-items: baseline;
+}
+.modal-form .modal-checkbox .checkbox-text {
+  font-size: 14px;
+  line-height: 1.46;
+  letter-spacing: 0.03em;
+  color: rgb(117, 117, 117);
+  margin: 0 0 28px 37px;
+}
+.modal-form .modal-button {
+  padding: 10px 76px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  background-color: rgb(33, 150, 243);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form .modal-button-section {
+  text-align: center;
+}
+.modal-form .modal-tick {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 15px;
+  visibility: hidden;
+  border-radius: 2px;
+  margin-left: 15px;
+}
+.modal-form .modal-tick-box {
+  position: absolute;
+  border-radius: 2px;
+  margin-left: 15px;
+}
+.modal-form .modal-terms {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+.modal-form .modal-terms:checked ~ .modal-tick-box {
+  display: none;
+}
+.modal-form .modal-terms:checked ~ .modal-tick {
+  background-color: rgb(33, 150, 243);
+  visibility: visible;
+}/*# sourceMappingURL=global-modales.css.map */

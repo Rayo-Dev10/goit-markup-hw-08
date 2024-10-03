@@ -1,0 +1,75 @@
+@import "./variables.scss";
+
+// Mixin para centrar elementos
+@mixin center {
+  display: block;
+  margin: 0 auto;
+}
+
+// Mixin para la lista de trabajos
+@mixin work-list {
+  display: flex;
+  gap: $gap-list-items; // Utiliza la variable para el espaciado
+  justify-content: space-between;
+}
+
+// Mixin para el set de trabajos
+@mixin work-set {
+  flex-basis: calc((100% - 60px) / 3);
+  position: relative;
+}
+
+// Mixin para la superposición
+@mixin overlay {
+  background-color: $dark-background-color;
+  bottom: 0;
+  height: 70px;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+}
+
+// Mixin para el párrafo de la superposición
+@mixin overlay-text {
+  color: $secondary-text-color;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-top: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// Mixin para el título del trabajo
+@mixin work-title {
+  color: $main-text-color;
+  font-size: $font-size-title; // Utiliza la variable para el tamaño de fuente
+  font-weight: $font-weight-bold; // Utiliza la variable para el peso de fuente
+  letter-spacing: $letter-spacing-standard; // Utiliza la variable para el espaciado
+  line-height: 1;
+  margin-bottom: $margin-bottom-title; // Utiliza la variable para el margen inferior
+  text-align: center;
+}
+
+.work__image {
+  @include center; // Aplica el mixin para centrar
+}
+
+.work__list {
+  @include work-list; // Aplica el mixin para la lista de trabajos
+}
+
+.work__list--set {
+  @include work-set; // Aplica el mixin para el set de trabajos
+}
+
+.work__overlay-section {
+  @include overlay; // Aplica el mixin para la superposición
+
+  > p {
+    @include overlay-text; // Aplica el mixin para el texto de la superposición
+  }
+}
+
+.work__title {
+  @include work-title; // Aplica el mixin para el título del trabajo
+}

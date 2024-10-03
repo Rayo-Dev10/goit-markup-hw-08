@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* Mixin para el contenedor del header */
+/* Mixin para el logo */
+/* Mixin para la sección de navegación */
+/* Mixin para la lista de navegación */
+/* Mixin para la lista de navegación subrayada */
+/* Mixin para los elementos de la lista de navegación y contacto */
+/* Mixin para el estado hover y focus */
+/* Mixin para la lista de contacto */
+/* Mixin para el conjunto de contacto */
+/* Mixin para el ícono de contacto */
+/* Aplicación de los mixins */
+.header__content {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.logo__set {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  color: rgb(33, 150, 243);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__nav-section {
+  margin-left: 93px;
+  margin-top: auto;
+}
+
+.header__nav-list {
+  display: flex;
+  font-weight: 500;
+  align-content: space-between;
+  gap: 46px;
+}
+
+.header__nav-list--underline::after {
+  content: "";
+  background-color: rgb(33, 150, 243);
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+}
+
+.header__nav-list--item,
+.header__contact-set--item {
+  color: rgb(33, 33, 33);
+}
+
+.header__contact-set--item:hover,
+.logo__set:hover,
+.header__nav-list--item:hover,
+.header__contact-set--item:focus,
+.logo__set:focus,
+.header__nav-list--item:focus {
+  color: rgb(33, 150, 243);
+  transform: scale(1.1);
+}
+
+.current-page {
+  color: rgb(33, 150, 243);
+  display: block;
+  padding-bottom: 28px;
+}
+
+.header__contact-list {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+  align-items: center;
+  transition: color, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__contact-set {
+  font-weight: 500;
+}
+
+.header__contact-set--item {
+  color: rgb(117, 117, 117);
+}
+
+.contact-set--icon {
+  margin-right: 10px;
+  fill: rgb(117, 117, 117);
+}
+.contact-set--icon:hover, .contact-set--icon:focus {
+  fill: rgb(33, 150, 243);
+}/*# sourceMappingURL=global-header.css.map */

@@ -1,0 +1,64 @@
+.team {
+  background-color: rgb(245, 244, 250);
+}
+.team .team__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(33, 33, 33);
+  line-height: 1;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.team .team__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+.team .team__card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team .team__info {
+  padding: 30px 0;
+  text-align: center;
+}
+.team .team__member {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+.team .team__role {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: rgb(117, 117, 117);
+}
+.team .team__rrss--list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.team .team__rrss--icon {
+  fill: rgb(175, 177, 184);
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.team .team__rrss--list > li {
+  padding: 12px;
+  border-radius: 50%;
+  transition: color, background-color, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team .team__rrss--list > li:hover, .team .team__rrss--list > li:focus {
+  background-color: rgb(33, 150, 243);
+  cursor: pointer;
+}
+.team .team__rrss--list > li:hover .team__rrss--icon, .team .team__rrss--list > li:focus .team__rrss--icon {
+  fill: rgb(255, 255, 255);
+}/*# sourceMappingURL=estudio-equipo.css.map */

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+    <link href="sass/main.css" rel="stylesheet">
+    <title>Principal</title>
+  </head>
+
+  <body>
+    <header class="container header">
+      <div class="header__content">
+        <a href="index.html" class="logo__set">WebStudio</a>
+        <nav class="header__nav-section">
+          <ul class="header__nav-list">
+            <li class="header__nav-list--underline">
+              <a class="header__nav-list--item current-page" href="index.html">Estudio</a>
+            </li>
+            <li class="header__nav-transition--item">
+              <a class="header__nav-list--item" href="portfolio.html">Portafolio</a>
+            </li>
+            <li class="header__nav-transition--item">
+              <a class="header__nav-list--item" href="#">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__contact-list">
+          <li class="header__contact-set">
+            <a class="header__contact-set--item" href="mailto:info@devstudio.com">
+              <svg height="12" width="16" class="contact-set--icon"><use href="./images/icons/sprite.svg#icon-envelope"></use></svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header__contact-set">
+            <a class="header__contact-set--item" href="tel:+380961111111">
+              <svg height="16" width="10" class="contact-set--icon"><use href="./images/icons/sprite.svg#icon-smartphone"></use></svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  
+    <main>
+      <section class="hero section hero__image">
+        <div class="container hero__container">
+          <h1 class="hero__title">Soluciones eficaces para su negocio</h1>
+          <button type="button" class="hero__button" data-modal-open role="button"> Solicite nuestro servicio</button>
+        </div>
+      </section>
+    </main>
+    
+      <section class="features section">
+        <div class="container features__container">
+          <h2 class="features__section--title visually-hidden">Características</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__icon--section"><svg class="features__icon"><use href="./images/icons/sprite.svg#icon-antenna"></use></svg></div>
+              <h2 class="features__title">ATENCIÓN A LOS DETALLES</h2>
+              <p class="features__text">Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar una solución a su medida.</p>
+            </li>
+            <li class="features__item">
+              <div class="features__icon--section"><svg class="features__icon"><use href="./images/icons/sprite.svg#icon-clock"></use></svg></div>
+              <h2 class="features__title">PUNTUALIDAD</h2>
+              <p class="features__text">Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y respetar los plazos acordados.</p>
+            </li>
+            <li class="features__item">
+              <div class="features__icon--section"><svg class="features__icon"><use href="./images/icons/sprite.svg#icon-diagram"></use></svg></div>
+              <h2 class="features__title">PLANIFICACIÓN</h2>
+              <p class="features__text">Usted podrá observar y participar en cada fase del desarrollo y aplicación de soluciones.</p>
+            </li>
+            <li class="features__item">
+              <div class="features__icon--section"><svg class="features__icon"><use href="./images/icons/sprite.svg#icon-astronaut"></use></svg></div>
+              <h2 class="features__title">TEGNOLOGÍA MODERNA</h2>
+              <p class="features__text">Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    
+      <section class="work section">
+        <div class="container work-section__container">
+          <h2 class="work__title">A qué nos dedicamos</h2>
+          <ul class="work__list">
+            <li class="work__list--set"><div class="work__overlay-section"><p>Aplicaciones de Escritorio</p></div><img src="images/img1.jpg" class="work__image" alt="opis obrazu 1" /></li>
+            <li class="work__list--set"><div class="work__overlay-section"><p>Aplicaciones Móviles</p></div><img src="images/img2.jpg" class="work__image" alt="opis obrazu 2" /></li>
+            <li class="work__list--set"><div class="work__overlay-section"><p>Soluciones de Diseño</p></div><img src="images/img3.jpg" class="work__image" alt="opis obrazu 3" /></li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="team section">
+        <div class="container team__container">
+          <h2 class="team__title">Nuestro Equipo</h2>
+          <ul class="team__list">
+            <li class="team__card"><img src="images/img11.jpg" class="team__photo" alt="Foto de Andrés Cubo, Diseñador de Productos" width="270" /><div class="team__info"><h3 class="team__member">Andrés Cubo</h3><p class="team__role">Diseñador de Productos</p><ul class="team__rrss--list"><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-instagram"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-twitter"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-facebook"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-linkedin"></use></svg></a></li></ul></div></li>
+            <li class="team__card"><img src="images/img12.jpg" class="team__photo" alt="Foto de Carla Palacios, Desarrollador Frontend" width="270" /><div class="team__info"><h3 class="team__member">Carla Palacios</h3><p class="team__role">Desarrollador Frontend</p><ul class="team__rrss--list"><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-instagram"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-twitter"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-facebook"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-linkedin"></use></svg></a></li></ul></div></li>
+            <li class="team__card"><img src="images/img13.jpg" class="team__photo" alt="Foto de Mario Dorado, Marketing" width="270" /><div class="team__info"><h3 class="team__member">Mario Dorado</h3><p class="team__role">Marketing</p><ul class="team__rrss--list"><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-instagram"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-twitter"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-facebook"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-linkedin"></use></svg></a></li></ul></div></li>
+            <li class="team__card"><img src="images/img14.jpg" class="team__photo" alt="Foto de John Doe, Diseñador de UI" width="270" /><div class="team__info"><h3 class="team__member">John Doe</h3><p class="team__role">Diseñador IU</p><ul class="team__rrss--list"><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-instagram"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-twitter"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-facebook"></use></svg></a></li><li class="team_rrss--set"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon"><use href="./images/icons/sprite.svg#icon-linkedin"></use></svg></a></li></ul></div></li>
+          </ul>
+        </div>
+      </section>
+     
+      <section class="clients section">
+        <div class="container clients__container">
+          <h2 class="clients__title">Clientes Regulares</h2>
+          <ul class="clients__list">
+            <li class="clients__item"><a href="#"><svg class="clients__icon"><use href="./images/icons/sprite.svg#icon-client1"></use></svg></a></li>
+            <li class="clients__item"><a href="#"><svg class="clients__icon"><use href="./images/icons/sprite.svg#icon-client2"></use></svg></a></li>
+            <li class="clients__item"><a href="#"><svg class="clients__icon"><use href="./images/icons/sprite.svg#icon-client3"></use></svg></a></li>
+            <li class="clients__item"><a href="#"><svg class="clients__icon"><use href="./images/icons/sprite.svg#icon-client4"></use></svg></a></li>
+            <li class="clients__item"><a href="#"><svg class="clients__icon"><use href="./images/icons/sprite.svg#icon-client5"></use></svg></a></li>
+            <li class="clients__item"><a href="#"><svg class="clients__icon"><use href="./images/icons/sprite.svg#icon-client6"></use></svg></a></li>
+          </ul>
+        </div>
+      </section>
+      </main>
+
+      <footer class="footer__content">
+        <div class="container footer__container">
+          <div class="footer__set">
+            <ul class="footer__list">
+              <li class="footer__item logo__transition"><a href="index.html" class="logo__set">WebStudio</a></li>
+              <li class="footer__item address-transition"><a class="footer__contact footer__contact--address" href="https://maps.app.goo.gl/9mwFSRPnRB1V5AtL7">Calz. Ticomán 500, Ciudad de<br />México, CDMX, México</a></li>
+              <li class="footer__item address-transition"><a class="footer__contact footer__contact--email" href="mailto:info@example.com">info@example.com</a></li>
+              <li class="footer__item address-transition"><a class="footer__contact footer__contact--phone" href="tel:+5255552960001">+52 55 5529 60001</a></li>
+            </ul>
+          </div>
+          <div class="footer__join">
+            <h3 class="footer__join--title">ENCUÉNTRENOS EN</h3>
+            <ul class="team__rrss--list footer__social--list">
+              <li class="team_rrss--set footer__social--item"><a href="#"><svg class="team__rrss--icon footer__social-icon"><use href="./images/icons/sprite.svg#icon-instagram"></use></svg></a></li>
+              <li class="team_rrss--set footer__social--item"><a href="#"><svg class="team__rrss--icon footer__social-icon"><use href="./images/icons/sprite.svg#icon-twitter"></use></svg></a></li>
+              <li class="team_rrss--set footer__social--item"><a href="#"><svg class="team__rrss--icon footer__social-icon"><use href="./images/icons/sprite.svg#icon-facebook"></use></svg></a></li>
+              <li class="team_rrss--set footer__social--item"><a href="#"><svg class="team__rrss--icon footer__social-icon"><use href="./images/icons/sprite.svg#icon-linkedin"></use></svg></a></li>
+            </ul>
+          </div>
+          
+    
+          <div class="signup-form">
+            <h3 class="signup-form__title">Suscríbase al boletín informativo</h3>
+            <div class="signup-form__section">
+              <form class="footer__signup-form-form">
+                <input class="signup-form__input" type="email" name="signup-email" placeholder="Correo electrónico" />
+                <button type="submit" class="signup-form__button" role="button">Suscríbase<svg width="24px" height="24px" class="signup-form__icon"><use href="./images/icons/sprite.svg#icon-sendform"></use></svg></button>
+              </form>
+            </div>
+          </div>
+          
+      
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          &#10006;
+        </button>
+
+        <form class="modal-form" autocomplete="off">
+          <p class="modal-header">
+            Deje sus datos, nos contactaremos con usted
+          </p>
+
+          <label class="form-label">
+            <span class="label-text">Nombre</span>
+            <svg width="12px" height="12px" class="modal-form-icon">
+              <use href="./images/icons/sprite.svg#icon-avatar"></use>
+            </svg>
+            <input
+              type="text"
+              name="username"
+              class="form-input"
+              minlength="3"
+              required
+            />
+          </label>
+
+          <label class="form-label">
+            <span class="label-text">Teléfono</span>
+            <svg width="13px" height="13px" class="modal-form-icon">
+              <use href="./images/icons/sprite.svg#icon-telephone"></use>
+            </svg>
+            <input type="tel" name="phone-number" class="form-input" required />
+          </label>
+
+          <label class="form-label">
+            <span class="label-text">E-mail</span>
+            <svg width="15px" height="12px" class="modal-form-icon">
+              <use href="./images/icons/sprite.svg#icon-envelope1"></use>
+            </svg>
+            <input type="email" name="user-email" class="form-input" required />
+          </label>
+          <label class="form-label">
+            <span class="label-text">Comentarios</span>
+            <textarea
+              name="comment"
+              rows="5"
+              class="form-textarea"
+              placeholder="Introduzca el texto"
+            ></textarea>
+          </label>
+          <label class="modal-checkbox" for="checkbox"
+            ><span class="checkbox-text">
+              Estoy de acuerdo con el boletín informativo y acepto los Términos
+              y Condiciones
+            </span>
+            <input
+              type="checkbox"
+              value="terms-conditions"
+              class="modal-terms"
+              id="checkbox"
+            />
+            <svg width="16px" height="15px" class="modal-tick">
+              <use href="./images/icons/sprite.svg#icon-tick"></use>
+            </svg>
+            <svg width="16px" height="15px" class="modal-tick-box">
+              <use href="./images/icons/sprite.svg#icon-tick-box"></use>
+            </svg>
+          </label>
+
+          <div class="modal-button-section">
+            <button type="submit" class="modal-button">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

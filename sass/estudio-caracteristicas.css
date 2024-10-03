@@ -1,0 +1,38 @@
+.features__icon--section {
+  background-color: rgb(245, 244, 250);
+  border-radius: 4px;
+  padding: 25px 100px;
+}
+.features__icon--section .features__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.features__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.features__title {
+  color: rgb(33, 33, 33);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  margin: 30px 0 10px;
+  text-transform: uppercase;
+}
+
+.features__text {
+  color: rgb(117, 117, 117);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+  text-align: left;
+}/*# sourceMappingURL=estudio-caracteristicas.css.map */

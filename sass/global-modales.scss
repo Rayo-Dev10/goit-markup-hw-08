@@ -1,0 +1,233 @@
+@import "./variables.scss";
+
+/* Mixin para el backdrop */
+@mixin backdrop {
+  background-color: $backdrop-background-color;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  transition: opacity $duration-time cubic-bezier(0.4, 0, 0.2, 1),
+              visibility $duration-time cubic-bezier(0.4, 0, 0.2, 1),
+              transform $duration-time cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: visible;
+  width: 100%;
+  z-index: 100;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+/* Mixin para el modal */
+@mixin modal {
+  background-color: $background-color;
+  border-radius: $card-border-radius; // Utiliza la variable para el radio de borde
+  display: block;
+  height: 581px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+
+  .close-btn {
+    border: 1px solid $modal-button-stroke;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+
+    // Efecto hover para cambiar el color de la "x"
+    &:hover {
+      fill: $active-color; // Cambia el color al pasar el cursor
+    }
+  }
+}
+
+/* Mixin para el formulario modal */
+@mixin modal-form {
+  display: block;
+  padding: 40px;
+
+  .modal-header {
+    text-align: center;
+    color: $main-text-color;
+    font-weight: $font-weight-bold; // Peso de fuente para el encabezado
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+
+  .form-label {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+
+    .label-text {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: $paragraf-text-color;
+    }
+
+    .modal-form-icon {
+      fill: $main-text-color; // colores de los iconos del formulario
+      position: absolute;
+      display: block;
+      top: 55%;
+      left: 15px;
+    }
+
+    &:focus-within {
+      .modal-form-icon {
+        fill: $active-color; 
+      }
+
+      .form-input,
+      .form-textarea {
+        border-color: $active-color; 
+        outline-color: $active-color; 
+      }
+    }
+  }
+
+  .form-input {
+    width: 100%;
+    height: 40px;
+    border: solid 1px;
+    border-radius: $card-border-radius; // Utiliza la variable para el radio de borde
+    border-color: $modal-form-border;
+    outline-color: $modal-form-border;
+    margin-top: 4px;
+    padding: 12px 42px;
+  }
+
+  .form-textarea {
+    width: 100%;
+    height: auto;
+    border: solid 1px;
+    border-radius: $card-border-radius; 
+    border-color: $modal-form-border;
+    outline-color: $modal-form-border;
+    margin: 4px 0 20px 0;
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    resize: none;
+  }
+
+  .modal-link {
+    text-decoration: underline;
+    color: $active-color;
+    transition: transform $duration-time cubic-bezier(0.4, 0, 0.2, 1),
+                font-weight $duration-time cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.03);
+      font-weight: $font-weight-medium;
+
+    }
+  }
+
+  .modal-checkbox {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    align-items: baseline;
+
+    .checkbox-text {
+      font-size: 14px;
+      line-height: 1.46;
+      letter-spacing: 0.03em;
+      color: $paragraf-text-color;
+      margin: 0 0 28px 37px;
+    }
+  }
+
+  .modal-button {
+    padding: 10px 76px;
+    font-weight: $font-weight-bold;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    background-color: $active-color;
+    color: $secondary-text-color;
+    border: none;
+    border-radius: $card-border-radius;
+    position: relative;
+    box-shadow: $box-shadow-light;
+    transition: transform $duration-time cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-button-section {
+    text-align: center;
+  }
+
+  .modal-tick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 15px;
+    visibility: hidden;
+    border-radius: 2px;
+    margin-left: 15px;
+  }
+
+  .modal-tick-box {
+    position: absolute;
+    border-radius: 2px;
+    margin-left: 15px;
+  }
+
+  .modal-terms {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+
+    &:checked ~ .modal-tick-box {
+      display: none;
+    }
+
+    &:checked ~ .modal-tick {
+      background-color: $active-color;
+      visibility: visible;
+    }
+  }
+}
+
+/* Aplicación de los mixins */
+.backdrop {
+  @include backdrop; 
+}
+
+.modal {
+  @include modal; 
+
+  .close-btn {
+    border: 1px solid $modal-button-stroke;
+
+    &:hover {
+      color: $active-color; 
+    }
+  }
+}
+
+.modal-form {
+  @include modal-form; 
+}

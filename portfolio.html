@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+  <link href="sass/main.css" rel="stylesheet">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header class="container header">
+    <div class="header__content">
+      <a href="index.html" class="logo__set">WebStudio</a>
+      <nav class="header__nav-section">
+        <ul class="header__nav-list">
+          <li class="header__nav-transition--item">
+            <a class="header__nav-list--item" href="index.html">Estudio</a>
+          </li>
+          <li class="header__nav-list--underline">
+            <a class="header__nav-list--item current-page" href="portfolio.html">Portafolio</a>
+          </li>
+          <li class="header__nav-transition--item">
+            <a class="header__nav-list--item" href="#">Contactos</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__contact-list">
+        <li class="header__contact-set">
+          <a class="header__contact-set--item" href="mailto:info@devstudio.com">
+            <svg height="12" width="16" class="contact-set--icon"><use href="./images/icons/sprite.svg#icon-envelope"></use></svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="header__contact-set">
+          <a class="header__contact-set--item" href="tel:+380961111111">
+            <svg height="16" width="10" class="contact-set--icon"><use href="./images/icons/sprite.svg#icon-smartphone"></use></svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+      <!-- ::: Inicio filtro de elementos ::: -->
+<section class="filters section">
+  <div class="filters__container container">
+    <ul class="filters__list">
+      <li class="filters__item"><button type="button" class="filters__button" role="button">Todo</button></li>
+      <li class="filters__item"><button type="button" class="filters__button" role="button">Sitios-web</button></li>
+      <li class="filters__item"><button type="button" class="filters__button" role="button">Aplicaciones</button></li>
+      <li class="filters__item"><button type="button" class="filters__button" role="button">Diseño</button></li>
+      <li class="filters__item"><button type="button" class="filters__button" role="button">Marketing</button></li>
+    </ul>
+    <!-- ::: Fin filtro de elementos ::: -->
+
+<!-- :::  Inicio imagenes de portafolios  ::: -->
+<ul class="portfolio">
+  <!-- ::: Inicio Items  ::: -->
+
+  <!-- :::  Inicio de item  ::: -->
+<li class="portfolio__item">
+  <div class="portfolio__card">
+    <img class="portfolio__img" src="./images/pimg1.jpg" alt="Tecnoduck" />
+    <div class="portfolio__overlay">
+      <p>
+        Tecnoduck es una plataforma de
+        distribución de coronavirus de última
+        generación. Las compañías usan esta
+        plataforma para el espionaje digital y
+        los ataques a los servidores seguros
+        de la competencia.
+      </p>
+    </div>
+  </div>
+  <div class="portfolio__info">
+    <h3 class="portfolio__title">Tecnoduck</h3>
+    <p class="portfolio__category">Sitio-web</p>
+  </div>
+</li>
+<!-- :::  Fin de item  ::: -->
+
+<!-- :::  Inicio de item  ::: -->
+<li class="portfolio__item">
+  <div class="portfolio__card">
+    <img class="portfolio__img" src="./images/pimg2.jpg" alt="Poster" />
+    <div class="portfolio__overlay">
+      <p>
+        El diseño de posters es una forma creativa de comunicar ideas.
+        Combina imágenes y texto para capturar la atención del espectador y
+        transmitir mensajes de manera efectiva. La elección de colores, tipografía y
+        composición es crucial para crear diseños impactantes. ¡La creatividad no tiene límites en este arte!
+      </p>
+    </div>
+  </div>
+  <div class="portfolio__info">
+    <h3 class="portfolio__title">Nueva Orleans vs Estrella Dorada</h3>
+    <p class="portfolio__category">Diseño</p>
+  </div>
+</li>
+<!-- :::  Fin de item  ::: -->
+
+<!-- :::  Inicio de item  ::: -->
+<li class="portfolio__item">
+  <div class="portfolio__card">
+    <img class="portfolio__img" src="./images/pimg3.jpg" alt="Restaurante" />
+    <div class="portfolio__overlay">
+      <p>
+        Restaurante Seafood es un paraíso para los amantes del mar. Ofrecemos una experiencia culinaria
+        excepcional con los sabores más frescos del océano. Nuestro menú te transportará a las costas y te hará
+        sentir la brisa marina en cada bocado. ¡Sumérgete en un festín de sabor!
+      </p>
+    </div>
+  </div>
+  <div class="portfolio__info">
+    <h3 class="portfolio__title">Restaurante Seafood</h3>
+    <p class="portfolio__category">Aplicaciones</p>
+  </div>
+</li>
+<!-- :::  Fin de item  ::: -->
+
+<!-- :::  Inicio de item  ::: -->
+<li class="portfolio__item">
+  <div class="portfolio__card">
+    <img class="portfolio__img" src="./images/pimg4.jpg" alt="Prime" />
+    <div class="portfolio__overlay">
+      <p>
+        Proyecto Prime es la clave del éxito en marketing. Transformamos ideas en estrategias ganadoras. Nuestro
+        enfoque innovador impulsa marcas hacia el reconocimiento global. Desbloqueamos el potencial de tu
+        negocio y te llevamos a la cima del mercado. ¡Eleva tu juego con Proyecto Prime!
+      </p>
+    </div>
+  </div>
+  <div class="portfolio__info">
+    <h3 class="portfolio__title">Proyecto Prime</h3>
+    <p class="portfolio__category">Marketing</p>
+  </div>
+</li>
+<!-- :::  Fin de item  ::: -->
+
+<!-- :::  Inicio de item  ::: -->
+<li class="portfolio__item">
+  <div class="portfolio__card">
+    <img class="portfolio__img" src="./images/pimg5.jpg" alt="Cajas" />
+    <div class="portfolio__overlay">
+      <p>
+        Proyecto Cajas es la llave de la innovación en aplicaciones. Creamos soluciones intuitivas que
+        transforman la experiencia del usuario. Nuestra pasión por la tecnología se refleja en cada línea de
+        código. Desbloqueamos posibilidades infinitas y hacemos que tu visión cobre vida. ¡Eleva tus
+        aplicaciones con Proyecto Cajas!
+      </p>
+    </div>
+  </div>
+  <div class="portfolio__info">
+    <h3 class="portfolio__title">Proyecto Cajas</h3>
+    <p class="portfolio__category">Aplicaciones</p>
+  </div>
+</li>
+<!-- :::  Fin de item  ::: -->
+
+<!-- :::  Inicio de item  ::: -->
+<li class="portfolio__item">
+  <div class="portfolio__card">
+    <img class="portfolio__img" src="./images/pimg6.jpg" alt="Inspiracion" />
+    <div class="portfolio__overlay">
+      <p>
+        La inspiración no tiene límites en nuestro sitio web. Explora un mundo de creatividad y descubre nuevas
+        ideas. Nuestra plataforma es el lugar donde las mentes brillantes se encuentran. Te invitamos a
+        sumergirte en un océano de inspiración y conocimiento. ¡El viaje comienza aquí!
+      </p>
+    </div>
+  </div>
+  <div class="portfolio__info">
+    <h3 class="portfolio__title">La inspiración no tiene limites</h3>
+    <p class="portfolio__category">Sitio-web</p>
+  </div>
+</li>
+<!-- :::  Fin de item  ::: -->
+
+<!-- :::  Inicio de item  ::: -->
+<li class="portfolio__item">
+  <div class="portfolio__card">
+    <img class="portfolio__img" src="./images/pimg7.jpg" alt="Magazine" />
+    <div class="portfolio__overlay">
+      <p>
+        Edición Limitada Diseño Magazine es la cumbre del arte visual. Cada página es una obra maestra.
+        Exploramos la creatividad sin fronteras. Nuestra pasión es inspirar y elevar el diseño a nuevas alturas.
+        Sumérgete en un mundo de estética y expresión. ¡Descubre la magia del diseño con nosotros!
+      </p>
+    </div>
+  </div>
+  <div class="portfolio__info">
+    <h3 class="portfolio__title">Edición Limitada</h3>
+    <p class="portfolio__category">Diseño</p>
+  </div>
+</li>
+<!-- :::  Fin de item  ::: -->
+
+<!-- :::  Inicio de item  ::: -->
+<li class="portfolio__item">
+  <div class="portfolio__card">
+    <img class="portfolio__img" src="./images/pimg8.jpg" alt="LAB" />
+    <div class="portfolio__overlay">
+      <p>
+        Proyecto LAB es el laboratorio de estrategia en marketing. Experimentamos con ideas innovadoras para
+        impulsar tu negocio. Nuestra misión es transformar desafíos en oportunidades. Creamos campañas que
+        generan impacto y resultados excepcionales. Únete a nosotros en el viaje hacia el éxito en marketing.
+      </p>
+    </div>
+  </div>
+  <div class="portfolio__info">
+    <h3 class="portfolio__title">Proyecto LAB</h3>
+    <p class="portfolio__category">Marketing</p>
+  </div>
+</li>
+<!-- :::  Fin de item  ::: -->
+
+<!-- :::  Inicio de item  ::: -->
+<li class="portfolio__item">
+  <div class="portfolio__card">
+    <img class="portfolio__img" src="./images/pimg9.jpg" alt="Negocio" />
+    <div class="portfolio__overlay">
+      <p>
+        Negocio en crecimiento en el mundo de las aplicaciones. Estamos en constante evolución, desarrollando
+        soluciones que impulsan tu éxito. Nuestro equipo está comprometido con la innovación y la excelencia.
+        Únete a nosotros en el viaje hacia el futuro digital. ¡Haz crecer tu negocio con nuestras aplicaciones
+        de vanguardia!
+      </p>
+    </div>
+  </div>
+  <div class="portfolio__info">
+    <h3 class="portfolio__title">Negocio en crecimiento</h3>
+    <p class="portfolio__category">Aplicaciones</p>
+  </div>
+</li>
+
+<!-- ::: Fin Items  ::: -->
+      <!-- :::  Fin imagenes de portafolios  ::: -->
+  </section>
+
+  <footer class="footer__content">
+    <div class="container footer__container">
+      <div class="footer__set">
+        <ul class="footer__list">
+          <li class="footer__item logo__transition"><a href="index.html" class="logo__set">WebStudio</a></li>
+          <li class="footer__item address-transition"><a class="footer__contact footer__contact--address" href="https://maps.app.goo.gl/9mwFSRPnRB1V5AtL7">Calz. Ticomán 500, Ciudad de<br />México, CDMX, México</a></li>
+          <li class="footer__item address-transition"><a class="footer__contact footer__contact--email" href="mailto:info@example.com">info@example.com</a></li>
+          <li class="footer__item address-transition"><a class="footer__contact footer__contact--phone" href="tel:+5255552960001">+52 55 5529 60001</a></li>
+        </ul>
+      </div>
+      <div class="footer__join">
+        <h3 class="footer__join--title">ENCUÉNTRENOS EN</h3>
+        <ul class="team__rrss--list footer__social--list">
+          <li class="team_rrss--set footer__social--item"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon footer__social-icon"><use href="./images/icons/sprite.svg#icon-instagram"></use></svg></a></li>
+          <li class="team_rrss--set footer__social--item"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon footer__social-icon"><use href="./images/icons/sprite.svg#icon-twitter"></use></svg></a></li>
+          <li class="team_rrss--set footer__social--item"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon footer__social-icon"><use href="./images/icons/sprite.svg#icon-facebook"></use></svg></a></li>
+          <li class="team_rrss--set footer__social--item"><a href="#"><svg width="20px" height="20px" class="team__rrss--icon footer__social-icon"><use href="./images/icons/sprite.svg#icon-linkedin"></use></svg></a></li>
+        </ul>
+      </div>
+      
+
+      <div class="signup-form">
+        <h3 class="signup-form__title">Suscríbase al boletín informativo</h3>
+        <div class="signup-form__section">
+          <form class="footer__signup-form-form">
+            <input class="signup-form__input" type="email" name="signup-email" placeholder="Correo electrónico" />
+            <button type="submit" class="signup-form__button" role="button">Suscríbase<svg width="24px" height="24px" class="signup-form__icon"><use href="./images/icons/sprite.svg#icon-sendform"></use></svg></button>
+          </form>
+        </div>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+    <button type="button" class="close-btn" data-modal-close>
+      &#10006;
+    </button>
+
+    <form class="modal-form" autocomplete="off">
+      <p class="modal-header">
+        Deje sus datos, nos contactaremos con usted
+      </p>
+
+      <label class="form-label">
+        <span class="label-text">Nombre</span>
+        <svg width="12px" height="12px" class="modal-form-icon">
+          <use href="./images/icons/sprite.svg#icon-avatar"></use>
+        </svg>
+        <input
+          type="text"
+          name="username"
+          class="form-input"
+          minlength="3"
+          required
+        />
+      </label>
+
+      <label class="form-label">
+        <span class="label-text">Teléfono</span>
+        <svg width="13px" height="13px" class="modal-form-icon">
+          <use href="./images/icons/sprite.svg#icon-telephone"></use>
+        </svg>
+        <input type="tel" name="phone-number" class="form-input" required />
+      </label>
+
+      <label class="form-label">
+        <span class="label-text">E-mail</span>
+        <svg width="15px" height="12px" class="modal-form-icon">
+          <use href="./images/icons/sprite.svg#icon-envelope1"></use>
+        </svg>
+        <input type="email" name="user-email" class="form-input" required />
+      </label>
+      <label class="form-label">
+        <span class="label-text">Comentarios</span>
+        <textarea
+          name="comment"
+          rows="5"
+          class="form-textarea"
+          placeholder="Introduzca el texto"
+        ></textarea>
+      </label>
+      <label class="modal-checkbox" for="checkbox"
+        ><span class="checkbox-text">
+          Estoy de acuerdo con el boletín informativo y acepto los Términos
+          y Condiciones
+        </span>
+        <input
+          type="checkbox"
+          value="terms-conditions"
+          class="modal-terms"
+          id="checkbox"
+        />
+        <svg width="16px" height="15px" class="modal-tick">
+          <use href="./images/icons/sprite.svg#icon-tick"></use>
+        </svg>
+        <svg width="16px" height="15px" class="modal-tick-box">
+          <use href="./images/icons/sprite.svg#icon-tick-box"></use>
+        </svg>
+      </label>
+
+      <div class="modal-button-section">
+        <button type="submit" class="modal-button">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="./js/modal.js"></script>
+</body>
+</html>

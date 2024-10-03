@@ -1,0 +1,42 @@
+.work__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.work__list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.work__list--set {
+  flex-basis: calc((100% - 60px) / 3);
+  position: relative;
+}
+
+.work__overlay-section {
+  background-color: rgb(47, 48, 58);
+  bottom: 0;
+  height: 70px;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+}
+.work__overlay-section > p {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 1.14;
+  padding-top: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.work__title {
+  color: rgb(33, 33, 33);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  margin-bottom: 50px;
+  text-align: center;
+}/*# sourceMappingURL=estudio-servicios.css.map */

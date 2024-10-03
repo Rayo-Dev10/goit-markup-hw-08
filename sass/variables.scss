@@ -1,0 +1,44 @@
+// Colores
+$active-color: rgba(33, 150, 243, 1); // Estado hover/activo en íconos y botones
+$background-color: rgba(255, 255, 255, 1); // Fondo de las tarjetas
+$background-section: rgba(229, 229, 229, 1);
+$background-team-section: rgba(245, 244, 250, 1); // Fondo de la sección del equipo
+$backdrop-background-color: rgba(0, 0, 0, 0.2);
+$border-color: rgba(236, 236, 236, 1);
+$container-color: rgba(238, 238, 238, 1);
+$dark-background-color: rgba(47, 48, 58, 1); // Fondo oscuro para elementos específicos
+$footer-icon-color: rgba(255, 255, 255, 0.1); // Íconos en el pie de página
+$footer-text-color: rgba(255, 255, 255, 0.6);
+$form-window-border: rgba(255, 255, 255, 0.3);
+$icon-color: rgba(175, 177, 184, 1); // Color de los íconos de redes sociales
+$logo-text-color: rgba(0, 0, 0, 0.25); // 25% opacidad, para decoraciones
+$main-text-color: rgba(33, 33, 33, 1); // Texto principal (ej. título)
+$modal-button-stroke: rgba(0, 0, 0, 0.1);
+$modal-form-border: rgba(33, 33, 33, 0.2);
+$modal-text-color: rgba(117, 117, 117, 0.5);
+$paragraf-text-color: rgba(117, 117, 117, 1); // Color de los roles de los miembros
+$secondary-text-color: rgba(255, 255, 255, 1); // Texto secundario (hover)
+
+// Tipografía
+$font-size-title: 36px; // Tamaño de fuente para el título de la sección
+$font-size-role: 16px; // Tamaño de fuente para los roles de los miembros
+$font-size-member: 16px; // Tamaño de fuente para los nombres de los miembros
+$font-weight-regular: 400; // Peso de fuente para los roles de los miembros
+$font-weight-medium: 500; // Peso de fuente para los nombres de los miembros
+$font-weight-bold: 700; // Peso de fuente para títulos
+$letter-spacing-standard: 0.03em; // Espaciado de letras para el texto general
+$main-font: Roboto, sans-serif; // Fuente principal
+
+// // // Dimensiones y Espaciado
+$padding-info: 30px 0; // Padding para el bloque de información
+$margin-bottom-title: 50px; // Margen inferior del título de la sección
+$gap-list-items: 30px; // Espaciado entre las tarjetas del equipo
+$card-border-radius: 4px; // Radio de borde para las tarjetas
+
+// Sombras
+$box-shadow-light: 0 1px 3px rgba(0, 0, 0, 0.12), 
+                   0 1px 1px rgba(0, 0, 0, 0.14), 
+                   0 2px 1px rgba(0, 0, 0, 0.2); // Sombra para las tarjetas
+
+// Transiciones
+$duration-time: 250ms; // Tiempo de transición para efectos como hover
